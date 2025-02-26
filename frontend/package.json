@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "karma start --single-run",
+      "test:coverage": "karma start --single-run && grep -q 'ERROR' coverage/coverage-summary.txt"
   },
   "private": true,
   "dependencies": {
